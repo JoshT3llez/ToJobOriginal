@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Subir Video</ion-title>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-button color="light">Seleccionar Archivo</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Titulo de video"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input label="Agrega un Hastag"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-textarea label="Descripcion" labelPlacement="floating" rows="5"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-note color="medium" class="ion-margin-horizontal">
+    Your comments will be kept anonymous and will only be used to improve the reliability of our products.</ion-note
+  >
+
+      <ion-button color="success" style="display: flex; align-items: center; justify-content: center;">Subir Video
+        <ion-icon name="arrow-up-circle-outline" slot="end"></ion-icon>
+      </ion-button>
+
+
+</ion-content>
